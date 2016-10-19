@@ -2,7 +2,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var mysql = require("node-mysql");
 var app = new express();
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 
 // create application/json parser 
 var jsonParser = bodyParser.json();
